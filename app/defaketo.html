@@ -1,0 +1,182 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>De Fake-to !</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<script src="./app.js"></script>
+</head>
+
+<body class="subpage">
+	<header id="header">
+		<div class="inner align-center">
+			<a class="logo">De Fake-to!</a>
+		</div>
+	</header>
+
+	<section id="main" class="wrapper">
+		<div class="inner">
+			<header class="align-center">
+				<h2>Welcome</h2>
+				<p id="acctName">D-Society</p>
+			</header>
+			<h2 id="elements" class="align-center">News Feed</h2>
+			<div id="newsFeed" class="table-wrapper">
+				<table id="newsFeedTbl" class="alt">
+					<thead>
+						<tr>
+							<th></th>
+							<th>Tag</th>
+							<th>News</th>
+							<th>Author</th>
+							<th></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="plus">
+								<a href="#" onclick="App.voteDown(this)" class="icon fa-minus-square">
+									<span>123</span>
+								</a>
+							</td>
+							<td>Politics</td>
+							<td>
+								<a onclick="App.generatePost(this)" href="#">World is controlled by illuminati
+								</a>
+							</td>
+							<td>bermuda</td>
+							<td class="minus">
+								<a href="#" onclick="App.voteUp(this)" class="icon fa-plus-square">
+									<span>23</span>
+								</a>
+							</td>
+						</tr>
+						<tr>
+							<td class="plus">
+								<a href="#" onclick="App.vote(this)" class="icon fa-minus-square">
+									<span>15</span>
+								</a>
+							</td>
+							<td>Sports</td>
+							<td>India win the ODI series against WI</td>
+							<td>truthtaker</td>
+							<td class="minus">
+								<a href="#" onclick="App.vote(this)" class="icon fa-plus-square">
+									<span>1223</span>
+								</a>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<div>
+					<ul class="actions">
+						<li>
+							<a onclick="App.displayAddNews()" class="button special">Post News</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div id="postFeed" class="table-wrapper">
+				<table id="postFeedTbl" class="alt">
+					<thead>
+						<tr>
+							<th></th>
+							<th>Proof</th>
+							<th>Author</th>
+							<th></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="plus">
+								<a href="#" onclick="App.vote(this)" class="icon fa-minus-square">
+									<span>1</span>
+								</a>
+							</td>
+							<td id="postData"></td>
+							<td id="postAuthor"></td>
+							<td class="minus">
+								<a href="#" onclick="App.vote(this)" class="icon fa-plus-square">
+									<span>3</span>
+								</a>
+							</td>
+						</tr>
+						<tr>
+							<td class="plus">
+								<a href="#" onclick="App.vote(this)" class="icon fa-minus-square">
+									<span>5</span>
+								</a>
+							</td>
+							<td>Related evidence listed</td>
+							<td>truthtalkersptr</td>
+							<td class="minus">
+								<a href="#" onclick="App.vote(this)" class="icon fa-plus-square">
+									<span>12</span>
+								</a>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<div>
+					<ul class="actions">
+						<li>
+							<a onclick="App.displayFeed()" class="button special">Back</a>
+						</li>
+						<li>
+							<a onclick="App.displayAddPost()" class="button special">Add Proof / Source</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div id="addNews">
+				<div>
+					<input type="text" id="tagName" value="" placeholder="Tag Name -  Eg.Politics, Sports" />
+				</div>
+				<br/>
+				<div>
+					<input type="text" id="newsContent" value="" placeholder="News Content" />
+				</div>
+				<br/>
+				<div>
+					<input type="text" id="newsAuth" value="" placeholder="Author Name" />
+				</div>
+				<br/>
+				<div>
+					<ul class="actions">
+						<li>
+							<a onclick="App.displayFeed()" class="button special">Back</a>
+						</li>
+						<li>
+							<a onclick="App.displayFeed()" class="button special">Submit</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div id="addPost">
+				<div>
+					<input type="text" id="postContent" value="" placeholder="News Content" />
+				</div>
+				<br/>
+				<div>
+					<input type="text" id="postAuth" value="" placeholder="Author Name" />
+				</div>
+				<div>
+					<input type="text" id="mainNewsId" value="" placeholder="Main News ID" />
+				</div>
+				<br/>
+				<div>
+					<ul class="actions">
+						<li>
+							<a onclick="App.displayPostFeed()" class="button special">Back</a>
+						</li>
+						<li>
+							<a onclick="App.generatePost()" class="button special">Submit</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+	</section>
+</body>
+
+</html>
